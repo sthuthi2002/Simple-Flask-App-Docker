@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: pythonmonitor
+  labels:
+    app: monitorapp
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: monitorapp
+  template:
+    metadata:
+      labels:
+        app: monitorapp
+    spec:
+      containers:
+      - name: monitorapp
+        image: sthuthi22/pythonapp:v1
+        ports:
+        - containerPort: 5000
