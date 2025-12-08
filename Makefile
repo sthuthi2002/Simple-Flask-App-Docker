@@ -1,7 +1,7 @@
 # FINAL Makefile for Simple-Flask-App (Jenkins + Python 3.12 Compatible)
 
 APP_NAME := simple-flask-app
-IMAGE_NAME := apoorvad4/$(APP_NAME)
+IMAGE_NAME := sthuthi22/$(APP_NAME)
 PORT := 5070
 
 .DEFAULT_GOAL := help
